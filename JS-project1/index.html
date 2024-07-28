@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Toss</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .container{
+            border: 2px solid black;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <h1 class="text-5xl text-center
+    mt-20" id="result"> Toss Coin</h1>
+    <div class="flex items-center justify-center">
+        <img  id="loading" class="mt-40 hidden" src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZXFoY2owYWI3bzJ3Zmo2ZnA4Z3M1bGNrdHNvc3YwMWR0ejZ4MmkzZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/YRbmf0GqdLScHy5RZc/giphy.webp" alt="">
+    <button id="btn" class="mt-10 text-3xl bg-red-600 text-white px-12 py-2 rounded-xl
+    hover:scale-105" onclick="tosshandler()">Toss</button>
+</div>
+   </div>
+    <script src="app.js"></script>
+</body>
+</html>

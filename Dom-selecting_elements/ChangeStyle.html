@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Manipulation Example</title>
+  <style>
+    .highlight {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <p id="paragraph">This is a paragraph.</p>
+  <button onclick="highlightParagraph()">Highlight Paragraph</button>
+
+  <script>
+    function highlightParagraph() {
+      const paragraph = document.getElementById('paragraph');
+      paragraph.classList.add('highlight');
+    }
+  </script>
+</body>
+</html>

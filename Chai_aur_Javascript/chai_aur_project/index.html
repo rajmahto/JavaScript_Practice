@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BgColourSwitcher</title>
+    <link rel="icon" href="smart-light.png" type="image/x-icon">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: "Noto Sans", sans-serif;
+        }
+        .canvas {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+        h1 {
+            padding-bottom: 60px;
+            text-align: center;
+        }
+        span {
+            height: 80px;
+            width: 80px;
+            border: 0.8px solid black;
+            box-shadow: 2px 2px 15px;
+            border-radius: 10px;
+            transition: transform 0.25s ease-in-out;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        #grey { background-color: grey; }
+        #white { background-color: white; }
+        #blue { background-color: blue; }
+        #yellow { background-color: yellow; }
+        #red { background-color: red; }
+        #green { background-color: green; }
+        #orange { background-color: orange; }
+        #pink { background-color: pink; }
+        span:hover {
+            transform: scale(1.1);
+        }
+        p{
+            text-align: center;
+            margin-top: 40px;
+            font-weight: 500;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>BackGround Colour Switcher</h1>
+    <div class="canvas">
+        <span class="button" id="grey"></span>
+        <span class="button" id="white"></span>
+        <span class="button" id="blue"></span>
+        <span class="button" id="yellow"></span>
+        <span class="button" id="red"></span>
+        <span class="button" id="green"></span>
+        <span class="button" id="orange"></span>
+        <span class="button" id="pink"></span>
+    </div>
+    <p>Click on a button above to change the background color of the page!</p>
+    <script>
+        const buttons = document.querySelectorAll('.button');
+        const body = document.querySelector("body");
+
+        buttons.forEach(function(button){
+            button.addEventListener('click', function(e){
+                body.style.backgroundColor = e.target.id;
+            });
+        });
+    </script>
+</body>
+</html>

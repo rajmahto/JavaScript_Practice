@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForMyFreind-Vishal</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+            overflow: hidden;
+        }
+        header{
+            font-size: 2.6rem;
+            font-weight: 600;
+            font-style: italic;
+            text-shadow: 40px 10px 20px white;
+        }
+        .im{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            width: 600px;
+            /* height: 550px; */
+            border-radius: 20px;
+            box-shadow: 2px 2px 20px;
+            transition: 0.5s ease-in-out;
+        }
+        img:hover{
+            transform: scale(1.01);
+            box-shadow: 5px 5px 40px aqua;
+        }
+        .head{
+            display: flex;
+            justify-content: center;
+        }
+        h1{
+            text-align: center;
+            margin-top: 10px;
+        }
+        .bu{
+            display: grid;
+            place-items: center;
+        }
+        button{
+            margin-top: 15px;
+            padding: 6px;
+            transition: 0.4s ease-in-out;
+            border-radius: 5px;
+            background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+            box-shadow: 1px 1px 5px;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+        button:hover{
+            transform: scale(1.1);
+            box-shadow: 3px 3px 15px black;
+        }
+        .high{
+            color: Red;
+            text-shadow: 4px 4px 10px rgb(13, 1, 1);
+            font-size: 4.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <header>My Dear Son</header>
+        </div>
+        <div class="im">
+            <img src="WhatsApp Image 2024-07-16 at 21.58.41_5fd52f17.jpg" alt="" loading="lazy">
+        </div>
+        <h1 id="name">Vishal</h1>
+       <div class="bu"> <button onclick="change()">Tere liye ek gift</button></div>
+    </div>
+    <script>
+        function change(){
+             let changeName = document.getElementById('name');
+             changeName.textContent = "Kya Re M*d*rCh*D";
+             changeName.classList.add('high');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+      body{
+        background-color: #212112;
+        color: aliceblue;
+        display: flex;
+      }  
+      
+    </style>
+</head>
+<body>
+    <h2>Amazing image</h2>
+    <div>
+        <ul id="images">
+            <li><img width="400px" id="photoshop" 
+                src="https://images.pexels.com/photos/18158591/pexels-photo-18158591/free-photo-of-family-of-elephants-in-savannah.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                 alt="photoshop">
+            </li>
+            <li><img width="400px" id="japan" 
+                src="https://images.pexels.com/photos/1440476/pexels-photo-1440476.jpeg?auto=compress&cs=tinysrgb&w=600"
+                 alt="">
+            </li>
+            <li><img width="400px" id="river" 
+                src="https://images.pexels.com/photos/2166711/pexels-photo-2166711.jpeg?auto=compress&cs=tinysrgb&w=600"
+                 alt="">
+            </li>
+            <li><img width="400px" id="owl" 
+                src="https://images.pexels.com/photos/33082/owl-close-up-bird-head.jpg?auto=compress&cs=tinysrgb&w=600"
+                 alt="">
+            </li>
+            <li><img width="400px" id="prayer" 
+                src="https://images.pexels.com/photos/1003917/pexels-photo-1003917.jpeg?auto=compress&cs=tinysrgb&w=600"
+                 alt="">
+            </li>
+            <li><a href="https://gogle.com" id="google">Google</a></li>
+        </ul>
+    </div>
+    <script>
+        // document.getElementById('owl').onclick = function()
+        // {
+        //    alert("owl clicked") 
+        // }
+         //type, timestamp, defoultPrevented
+        // target ,toElement,scrElement ,currentElement
+        //clientX, clientY,screenX,screenY
+        //altkey,ctrkey
+        document.getElementById('owl').addEventListener('click',function(e){
+            console.log("owl clicked")
+        },false)
+        document.getElementById('google').addEventListener('click',function(e){
+            console.log("google clicked")
+           e.preventDefault()
+        },false)
+
+        document.querySelector('#images').addEventListener('click',function(e){
+            console.log(e.target.tagName)
+            
+            if(e.target.tagName === 'IMG'){
+            let removeIt = e.target.parentNode
+            removeIt.remove();
+            }
+        })
+    </script>
+</body>
+</html>

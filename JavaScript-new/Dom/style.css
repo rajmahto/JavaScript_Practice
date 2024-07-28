@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.nav-items a {
+    transition: transform 0.2s ease-in-out;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.nav-items a:hover {
+    transform: scale(1.1);
+}
+
+.header {
+    position: relative;
+    min-height: 70vh;
+    background: url(dark.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    width: 90%;
+}
+.nav {
+    display: flex;
+    min-height: 8vh;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-items {
+    width: 40%;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+.headline {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.btn {
+    display: inline-block;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+button.btn {
+    transition: transform 0.2s ease-in-out;
+}
+
+button.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn-headline {
+    padding: 1rem 2rem;
+    font-size: 1rem; 
+    margin-top: 1rem;
+}
+.todo-section {
+    margin-top: 5rem;
+    text-align: center;
+}
+.form-todo {
+    min-height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.form-todo input {
+    min-height: 100%;
+}
+.form-todo input[type="text"] {
+    width: 78%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.form-todo input[type="submit"] {
+    width: 20%;
+    background: rgb(20, 23, 25);
+    color: white;
+    font-weight: bold;
+    transition: transform 0.2s ease-in-out;
+}
+
+.form-todo input[type="submit"]:hover {
+    transform: scale(1.05);
+}
+
+.section-signup {
+    margin: 5rem auto;
+    text-align: center;
+    background: rgb(232, 230, 230);
+    border-radius: 10px;
+    padding: 1rem;
+}
+.signup-form {
+    max-width: 800px;
+    width: 95%;
+    text-align: left;
+    margin: auto;
+}
+.signup-form label {
+    display: block;
+}
+.signup-form input {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+}
+.form-group {
+    margin-top: 1rem;
+}
+.signup-form textarea {
+    width: 100%;
+}
+.signup-btn {
+    background: rgb(20, 23, 25);
+    color: white;
+    padding: 1rem 2rem;
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.signup-btn:hover {
+    transform: scale(1.05);
+}
+
+.todo-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.todo-section li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+}
+
+.todo-section li span {
+    flex-grow: 1;
+    margin: 0 10px;
+}
+
+.todo-section li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.todo-section li .btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.todo-section li .edit-btn {
+    background-color: #3498db;
+    margin-right: 5px;
+}
+
+.todo-section li .edit-btn:hover {
+    background-color: #2980b9;
+}
+
+
+.todo-section li input[type="text"] {
+    flex-grow: 1;
+    padding: 5px;
+    margin: 0 10px;
+    border: 1px solid #ddd;
+}
+
+.todo-section li .btn-remove {
+    background-color: #e74c3c;
+}
+
+.todo-section li .btn-remove:hover {
+    background-color: #c0392b;
+}
+
+footer {
+    text-align: center;
+    color: #8d8b8b;
+    font-size: smaller;
+}

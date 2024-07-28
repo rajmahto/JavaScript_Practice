@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9795e2 100%);
+
+}
+main{
+   width: 60%;
+   height: 500px;
+   margin: auto;
+   margin-top: 70px;
+   box-shadow: 1px 1px 30px black;
+   position: relative;
+   overflow: hidden;
+   transition: 0.5s ease-in-out;
+   border-radius: 10px;
+}
+main:hover{
+    box-shadow: 2px 2px 30px orange;
+    transform: scale(1.01);
+}
+
+.slide{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    position: absolute;
+}
+.nav{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.nav button{
+    font: 25px;
+    padding: 5px;
+    margin: 5px;
+    box-shadow: 1px 1px 5px;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    
+}
+button:hover{
+    transform: scale(1.05);
+}
+
+footer p{
+    text-align: center;
+    font-size: small;
+    color: grey;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        width: 90%;
+        height: 300px;
+        margin-top: 50px;
+    }
+
+    .nav button {
+        font-size: 20px;
+        padding: 5px;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        width: 100%;
+        height: 250px;
+        margin-top: 30px;
+    }
+
+    .nav button {
+        font-size: 18px;
+        padding: 5px;
+        margin: 3px;
+    }
+}
